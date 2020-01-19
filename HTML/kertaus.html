@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Positioning Items</title>
+	<meta charset="UTF-8">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }   
+        html{
+            font-size: 20px;
+        }
+
+        body {
+            
+        }
+
+        .box {
+            height: 100px;
+            width: 20vw;
+            border: 1px solid black;
+            color: aliceblue;
+            float: left;
+            display: flex;
+            flex-wrap: wrap;
+            font-size: 3rem;
+        }
+
+        #red { background-color: red;}
+        #green { background-color: green;}
+        #blue { background-color: blue;}
+        #yellow { background-color: yellow; color: black;}
+        #orange { background-color: orange;}
+
+        .clear { clear: both;}
+
+        /* img */
+        img {
+        }
+
+        /* container */
+        .container {    
+            overflow: auto;       
+        }
+
+        /* relative and absolute positioning with blue */      
+        #blue {
+        }
+
+        h1 {
+            width: 20vw;
+            height: 100px;
+            color: black;
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+<div class="container">
+    <div class="box" id="red">Box 1</div>  
+    <div class="box" id="green">Box 2</div> 
+    <div class="box" id="blue">Box 3</div>  
+    <div class="box" id="yellow">Box 4</div>  
+    <div class="box" id="orange">Box 5</div>
+</div>
+    <!-- Float continues, clearing -->
+    
+    <h1 class="clear">Heading 1</h1><h1>Heading 2</h1>
+    
+    <!-- Responsive images and centering -->  
+     
+</body>
+</html>

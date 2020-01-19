@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --main-bg-color: rgb(88, 230, 118);
+    --sec-bg-color: brown;
+}
+
+html{
+    font-size: 16px;
+}
+
+body {
+    
+}
+a{
+    text-decoration: none;
+    color: brown;
+}
+a:hover{
+    color: brown;
+    background-color: var(--main-bg-color);
+}
+
+nav{
+    display: flex;
+    position: sticky;
+    top: 0;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+    padding: 0.5rem 1rem;
+}
+nav ul{
+  display: flex;
+  align-content: center;
+  list-style-type: none;
+}
+nav ul a {
+    padding: 1rem;
+    margin: 0 1em;
+    font-size: 1.5em;
+}
+nav span{
+    width: 20vw;
+}
+.searchimg{
+  width: 30px;
+  height: 30px;
+}
+#search{
+  width: 80%;
+  float: right;
+  height: 40px;
+  border-radius: 5px;
+  border-color: brown;
+  padding: 10px;
+  color: black;
+  outline: none;
+}
+.header{
+    display: flex;
+    height: 20vw;
+}
+.header p{
+    font-size: 1.5em;
+}
+
+.logoarea{
+  background-color: var(--main-bg-color);
+  flex: 4;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.imgarea{
+  background: var(--main-bg-color) url("../img/black-frying-pan-with-spaghetti-sauce-near-brown-wooden-691114.jpg") no-repeat center center/cover;
+  flex: 6;
+}
+#triangle{
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 20vw 0 0 200px;
+  border-color: transparent transparent transparent var(--main-bg-color);
+}
+
+/*
+.clear { clear: both;}
+.container {  
+    display: flex;
+    flex-direction: row;    
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex: 1 0 100%;
+    text-align: center; 
+}   
+h1{
+    flex-direction: row;
+    justify-content: flex-end;
+}
+*/
+
+.text{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+.text1{
+    width: 80vw;
+    padding: 2em 0;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+p{
+    font-size: 1em;
+    margin: 0.75rem 0;
+}
+
+.restaurants {
+    display: flex;       
+    flex-flow: row wrap;  
+  }
+  .restaurant {
+    display: flex;        
+    flex-flow: row; 
+    border: 1px solid var(--sec-bg-color);
+  }
+  .restaurant > img {
+    order: -1;            
+    align-self: flex-start;  
+    width: 150px;
+    height: 150px;
+    border: black;
+    border: 1px solid black;
+  }
+  .item-1{
+    width: 500px;
+    height: 150px;
+    padding-left: 1.5rem;
+    margin-left: 12em;
+    border-radius: 1em;
+    background-color: rgb(231, 231, 231);
+    border-style: dashed;
+  }
+  .item-2{
+    width: 500px;
+    height: 150px;
+    padding-left: 1.5rem;
+    margin-left: 5em;
+    border-radius: 1em;
+    background-color: rgb(231, 231, 231);
+    border-style: dashed;
+  }
+  
+
