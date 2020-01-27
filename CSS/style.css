@@ -143,6 +143,7 @@ nav span{
     border: black;
     background-color: white;
     margin: 10px 10px;
+    cursor: pointer;
   }
   .item{
     /*display: flex;*/
