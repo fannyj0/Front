@@ -168,6 +168,7 @@ nav span{
 }
 #location-img:hover{
     fill: var(--main-bg-color);
+    cursor: pointer;
 }
 .restaurants h1{
     font-size: 900;
@@ -215,6 +216,7 @@ nav span{
 }
 #add-img:hover{
     fill: #343A40;
+    cursor: pointer;
 }
 .add p{
     display: flex;
