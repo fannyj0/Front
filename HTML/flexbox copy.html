@@ -12,10 +12,11 @@
 
 <body>
 
-    <nav>
-        <label href="javascript:void(0);" for="hamburger" onclick="hamburger()">&#9776;</label>
+    <nav role="navigation">
+        <div id="menuToggle">
+        <input type="checkbox">
         <div id="logo-text">Lounari</div>
-        <ul id="myLinks">
+        <ul id="menu">
             <li><a href="">Etusivu</a></li>
             <li><a href="">Ruokalistat</a></li>
             <li><a href="">Ravintolat</a></li>
@@ -29,6 +30,7 @@
                 <input type="text" name="search" id="search" placeholder="Hae ravintolan nimellä...">
             </form>
         </span>
+        </div>
     </nav>
 
     <header class="header">

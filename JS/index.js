@@ -23,3 +23,13 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 }
+
+// Hamburger menu 
+function hamburger() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
