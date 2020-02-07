@@ -23,6 +23,15 @@ body {
 }
 
 /* ///////////// NAV /////////// */
+@media only screen and (min-width: 900px){
+  #hamburger{
+    display: none;
+  }
+  #logo-text{
+    display: none;
+  }
+}
+
 a{
     text-decoration: none;
     font-weight: 700;
@@ -79,6 +88,9 @@ nav span{
 #search-img > svg{
     fill: var(--sec-bg-color);
 }
+/* ///////////// HAMBURGER MENU //////////////// */
+
+
 
 /* //////////// HEADER /////////////// */
 .header{
@@ -151,7 +163,8 @@ nav span{
   .item{
     /*display: flex;*/
     width: 40vw;
-    height: 160px;
+    /*height: 200px;*/
+    height: fit-content;
     position: relative;
     overflow: auto;
     flex-wrap: wrap;
@@ -166,7 +179,7 @@ nav span{
     width: 30px;
     height: 30px;
     position: absolute;
-    bottom: 78%;
+    bottom: 92%;
     transform: translateX(900%);
     left: 5%;
 }

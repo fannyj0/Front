@@ -1,14 +1,12 @@
-:root{
-    --main-bg-color: #fbc02d;
-    --sec-bg-color: #000000;
-    --text-bg-color: #fefefe;
-}
-
+@media only screen and (max-width: 700px) {
+    main {
+      font-size: 16px;
+    }
+  
 /* hamburger menu*/
 nav{
     overflow: hidden;
     position: relative;
-    cursor: pointer;
     background-color: var(--sec-bg-color);
 }
 nav #myLinks{
@@ -16,8 +14,7 @@ nav #myLinks{
 }
 nav a{
     color: white;
-    padding: 14px 16px;
-    text-decoration: none;
+    padding: 14px 16px; 
     font-size: 17px;
     display: block;
 }
@@ -33,14 +30,42 @@ nav label{
 }
 nav a:hover{
     background-color: var(--main-bg-color);
-    color: black;
 }
-.active {
-    background-color: #4CAF50;
-    color: white;
-  }
 nav span{
     display: none;
+}
+nav #logo-text{
+    color: var(--text-bg-color);
+    justify-content: center;
+}
+nav ul li a {
+    text-align: center;
+}
+
+/*Header*/
+.header h1{
+    font-size: 30px;
+    margin: 0.75rem 0;
+    font-family: 'Roboto Slab', sans-serif;
+    font-weight: 800;
+    
+}
+.header p{
+    font-size: 13px;
+    font-family: 'roboto slab', sans-serif;
+    font-weight: 400;
+}
+#triangle{
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 20vw 0 0 140px;
+    border-color: transparent transparent transparent var(--main-bg-color);
+  }
+
+/* /////////////// Teksti //////////////// */
+.text{
+    font-size: 16px;
 }
 
 
@@ -50,8 +75,18 @@ nav span{
     justify-items: flex-start;
 }
 
-@media only screen and (max-width: 600px) {
-    main {
-      font-size: 16px;
-    }
-  }
+.item{
+    width: 100vw;
+}
+
+
+#mymodal{
+    position: fixed;
+  
+  z-index: 100;
+  
+  left: 50%;
+  top: 50%;
+}
+
+}
