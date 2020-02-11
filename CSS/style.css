@@ -10,7 +10,42 @@
     --main-bg-color: #fbc02d;
     --sec-bg-color: #000000;
     --text-bg-color: #fefefe;
+    /* --com-bg-color: #2d67fb; */
 }
+
+@media only screen and (max-width: 1214px){
+  input::placeholder{
+    color: transparent;
+  }
+}
+@media only screen and (max-width: 1015px){
+  #search-img{
+    left: 53px;
+    /* display: none; */
+  }
+}
+@media only screen and (max-width: 980px){
+  #search-img{
+    display: none;
+  }
+}
+#search-img > svg{
+    fill: var(--sec-bg-color);
+}
+@media only screen and (max-width: 888px){
+  #search{
+    display: none;
+  }
+}
+@media only screen and (min-width: 700px){
+  #hamburger{
+    display: none;
+  }
+  #logo-text{
+    display: none;
+  }
+}
+
 
 html{
     font-size: 16px;
@@ -23,15 +58,6 @@ body {
 }
 
 /* ///////////// NAV /////////// */
-@media only screen and (min-width: 700px){
-  #hamburger{
-    display: none;
-  }
-  #logo-text{
-    display: none;
-  }
-}
-
 a{
     text-decoration: none;
     font-weight: 700;
@@ -40,6 +66,8 @@ a{
 a:hover{
     color: var(--sec-bg-color);
     background-color: var(--main-bg-color);
+    border-radius: 20px;
+
 }
 
 nav{
@@ -85,9 +113,8 @@ nav span{
     transform: translateY(50%);
     left: 70px;
 }
-#search-img > svg{
-    fill: var(--sec-bg-color);
-}
+
+
 /* ///////////// HAMBURGER MENU //////////////// */
 
 
@@ -133,7 +160,7 @@ nav span{
 
 /* /////////////// TEKSTI //////////////// */
 .text{
-    display: flex;
+    /* display: flex; */
     text-align: center;
     justify-content: center;
     font-weight: 400;
@@ -155,11 +182,25 @@ nav span{
     align-self: center;  
     width: 7.5em;
     height: 7.5em;
-    border: black;
+    /* border: var(--sec-bg-color); */
     background-color: white;
     margin: 10px 10px;
     cursor: pointer;
+
+    border-style: dashed;
   }
+  /* /////////////////////////// Restaurant img Animaatio /////////////////////////// */
+  @keyframes blink{
+    50% {border-color: var(--main-bg-color);}
+  }
+  .blink{
+    border: 5px solid transparent;
+  }
+
+  .blink:hover{
+    animation: blink .75s step-end infinite;
+  }
+  /* ///////////////////////////////////////////////////////////////// */
   .item{
     /*display: flex;*/
     width: 40vw;
@@ -261,6 +302,7 @@ nav span{
 }
 
 /* //////////// MODAALI //////////////// */
+
 /* The Modal (background) */
 .modal {
     display: none; /* Hidden by default */
@@ -274,29 +316,51 @@ nav span{
     background-color: rgb(0,0,0); /* Fallback color */
     background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
   }
+
+  .modal header{
+    height: 15%;
+    background-color: var(--main-bg-color);
+  }
+  .modal h1{
+    padding: 10px 10px 0 0;
+  }
   
   /* Modal Content/Box */
   .modal-content {
     background-color: #fefefe;
     margin: 8% auto; /* 15% from the top and centered */
-    padding: 20px;
+    padding: 15px;
     border: 1px solid #888;
     width: 35%; /* Could be more or less, depending on screen size */
-    height: 60%;
+    height: 70%;
     overflow: auto;
   }
   
   /* The Close Button */
-  .close {
-    color: rgb(228, 0, 0);
+  .close1 {
+    color: var(--sec-bg-color);
     float: right;
-    font-size: 28px;
+    font-size: 50px;
     font-weight: bold;
   }
   
-  .close:hover,
-  .close:focus {
-    color: black;
+  .close1:hover,
+  .close1:focus {
+    color: var(--text-bg-color);
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .close2 {
+    color: var(--sec-bg-color);
+    float: right;
+    font-size: 50px;
+    font-weight: bold;
+  }
+  
+  .close2:hover,
+  .close2:focus {
+    color: var(--text-bg-color);
     text-decoration: none;
     cursor: pointer;
   }

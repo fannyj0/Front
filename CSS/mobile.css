@@ -17,6 +17,7 @@ nav a{
     padding: 14px 16px; 
     font-size: 17px;
     display: block;
+    text-align: center;
 }
 nav label{
     color: var(--main-bg-color);
@@ -28,18 +29,16 @@ nav label{
     height: 20px;
     font-size: 2em;
 }
-nav a:hover{
-    background-color: var(--main-bg-color);
-}
 nav span{
     display: none;
 }
 nav #logo-text{
-    color: var(--text-bg-color);
+    color: var(--main-bg-color);
     justify-content: center;
 }
 nav ul li a {
     text-align: center;
+    align-content: center;
 }
 
 /*Header*/
@@ -78,6 +77,9 @@ nav ul li a {
 .item{
     width: 100vw;
   }
+.food{
+    padding-right: 25%;
+}
 
 
 .modal-content{
@@ -96,10 +98,21 @@ nav ul li a {
     .text{
         font-size: 14px;
 
-        /* position: absolute;
-        top: 9%;
-        left: 2.5%;
+        position: absolute;
+        top: 6%;
+        left: 4.25%;
         background-color: rgba(255, 255, 255, 0.5);
-        color: var(--sec-bg-color); */
+        width: 90%;
+        padding: 1em 0;
+        line-height: 120%;
+    }
+    .food{
+        padding-right: 15%;
+    }
+}
+
+@media only screen and (max-width: 515px){
+    .food{
+        padding-right: 15%;
     }
 }

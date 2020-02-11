@@ -13,7 +13,7 @@
 
 <body>
 
-    <nav>
+    <nav class="container">
         <label id="hamburger" href="javascript:void(0);" for="hamburger" onclick="hamburger()">&#9776;</label>
         <div id="logo-text">Lounari</div>
        
@@ -47,7 +47,7 @@
         
         Missä tänään syötäisiin? Tuttu tarina ennen lounashetkeä.<br>
         Palvelu etsii lähelläsi olevat lounaspaikat, sekä näyttää niiden päivittäisen lounaslistan.<br> 
-        Viikottaiset lounaslistat ovat myös käytettävissäsi. Pääset niihin klikkaamalla ravintolan logoa.
+        Viikottaiset lounaslistat ovat myös käytettävissäsi. Pääset niihin <strong>klikkaamalla ravintolan logoa.</strong><br>
         
     </div>
 
@@ -55,7 +55,7 @@
 
         <div class="restaurant item">
               <!-- Trigger/Open The Modal with id -->
-            <img id="myBtn" src="../img/sodexo-vector-logo.png">
+            <img id="myBtn1" class="blink" src="../img/sodexo-vector-logo.png">
             <h1>Ravintola 1</h1>
             <h2>100m</h2>
             <span>
@@ -96,7 +96,7 @@
 
         <div class="restaurant item">
               <!-- Trigger/Open The Modal with id -->
-            <img id="myBtn" src="../img/foodco-teaser-450x450.png">
+            <img id="myBtn2" class="blink" src="../img/foodco-teaser-450x450.png">
             <h1>Ravintola 2</h1>
             <h2>1,6km</h2>
             <span>
@@ -149,16 +149,57 @@
     </div>
     
     <!-- The Modal -->
-    <div id="myModal" class="modal">
+    <div id="myModal1" class="modal">
 
         <!-- Modal content -->
         <div class="modal-content">
-            <span class="close">&times;</span>
-            <header><h1>PÄIVÄ: </h1></header>
+            <span class="close1">&times;</span>
+            <header><h1>PÄIVÄ: MAANANTAI</h1></header>
             
 
             <div>
                 <h3>KOTIRUOKA 1</h3>
+                <p>Broileripyörykät, paprikakastiketta ja keitettyä perunaa</p>
+                <br>
+                <h3>KOTIRUOKA 2</h3>
+                <p></p>Tandoori porsasta ja täysjyväriisiä</p>
+                <br>
+                <h3>VEGAANI</h3>
+                <p></p>Vegaani tofu-kookos wokkia ja täysjyväriisiä</p>
+                <br>
+                <h3>KASVISKEITTO</h3>
+                <p></p>Kasvis-borssikeittoa, lisäkesalaatti kahdella napaksella</p>
+                <br>
+                <h3>LEIPÄLOUNAS</h3>
+                <p></p>Lounaspatonki metwursti-juustotäytteellä</p>
+                <br>
+                <h3>JÄLKIRUOKA</h3>
+                <p></p>Mango smoothie</p>
+                <br>
+                <h3>GRILLI 1</h2>
+                <p></p>Juusto / kana / kasvis / halloumi burgeri ja ranskalaiset</p>
+                <br>
+                <h3>GRILLI 3</h2>
+                <p></p>Broileri- tai tofu-nuudeliwokkia</p>            
+            </div>
+
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- The Modal -->
+    <div id="myModal2" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close2">&times;</span>
+            <header><h1>PÄIVÄ: MAANANTAI</h1></header>
+            
+
+            <div>
+                <h3>KOTIRUOKA 2</h3>
                 <p>Broileripyörykät, paprikakastiketta ja keitettyä perunaa</p>
                 <br>
                 <h3>KOTIRUOKA 2</h3>
