@@ -7,10 +7,12 @@
 nav{
     overflow: hidden;
     position: relative;
+    padding: 1.3rem 1rem;
     background-color: var(--sec-bg-color);
 }
 nav #myLinks{
     display: none;
+    width: 100%;
 }
 nav a{
     color: white;
@@ -32,13 +34,18 @@ nav label{
 nav span{
     display: none;
 }
-nav #logo-text{
-    color: var(--main-bg-color);
-    justify-content: center;
-}
+
 nav ul li a {
     text-align: center;
     align-content: center;
+}
+nav #logo-text{
+    font-family: 'Roboto Slab', sans-serif;
+    font-weight: 800;
+    font-size: 30px;
+    color: var(--main-bg-color);
+    justify-content: center;
+    text-align: center;
 }
 
 /*Header*/
@@ -89,6 +96,7 @@ nav ul li a {
 }
 
 @media only screen and (max-width: 530px){
+       
     .logoarea{
         display: none;
     }
