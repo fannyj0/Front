@@ -1,5 +1,5 @@
 
-const wrapper = document.querySelector('.wrapper');
+const wrapper = document.querySelector('html');
 const layerOne = document.querySelector('.kuva');
 const layerTwo = document.querySelector('.ufo');
 const layerThree = document.querySelector('.light');
@@ -13,7 +13,6 @@ const cy = wrapper.clientHeight/2;
 document.querySelector('body').addEventListener('mousemove', (event) => {
     let x = event.clientX;
     let y = event.clientY;
-    //console.log('X: ' +x+ 'Y: ' +y);
 
     const coords = 'From left to right:<br> X: ' +x+ '\tY: ' +y;
     document.getElementById("mouse").innerHTML = coords;
