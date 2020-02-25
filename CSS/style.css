@@ -276,15 +276,22 @@ nav span{
     border-color: black;
     border-style: dotted;
     border-width: thin;
+    float: right;
 }
 #add-img{
     width: 30px;
     height: 30px;
     position: absolute;
-    bottom: 20%;
+    bottom: 10%;
     transform: translateX(900%);
-    left: -36%;
+    left: -40%;
     fill: #9BADBF;
+
+    justify-content: flex-start;
+    float: left;            
+    align-self: center;
+    margin: 10px 10px;  
+    cursor: pointer; 
 }
 #add-img:hover{
     fill: #343A40;
